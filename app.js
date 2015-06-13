@@ -5,9 +5,9 @@
 		var beachWeekTime = beachWeekDate.getTime() / 1000.0;
 
 		$interval(function () {
-			var nowDate = new Date()
-			var nowTime = nowDate.getTime() / 1000.0
-			$scope.timeRetimeRemaining = beachWeekTime - nowTime
+			var nowDate = new Date();
+			var nowTime = nowDate.getTime() / 1000.0;
+			$scope.timeRetimeRemaining = beachWeekTime - nowTime;
 		}, 1);
 	});
 })();
