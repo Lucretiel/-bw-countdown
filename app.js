@@ -1,5 +1,5 @@
 (function () {
-	angular.module("countdownApp").controller('CountdownController', function ($scope, $interval) {
+	angular.module("countdownApp", []).controller('CountdownController', function ($scope, $interval) {
 		var beachWeekDate = new Date(2015, 07, 5, 16);
 		var beachWeekTime = beachWeekDate.getTime() / 1000.0;
 
