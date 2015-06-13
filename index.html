@@ -20,9 +20,19 @@
   <body ng-controller="CountdownController">
     <div class="container">
       <div class="row">
-        <h1>
-          {{timeRemaining | number}} seconds remaining!
-        </h1>
+        <h1>{{seconds | number : 2}} seconds remaining!</h1>
+      </div>
+      <div class="row">
+        <h1>{{minutes | number : 3}} minutes remaining!</h1>
+      </div>
+      <div class="row">
+        <h1>{{hours | number : 4}} hours remaining!</h1>
+      </div>
+      <div class="row">
+        <h1>{{days | number : 5}} days remaining!</h1>
+      </div>
+      <div class="row">
+        <h1>{{weeks | number : 6}} weeks remaining!</h1>
       </div>
     </div>
   </body>
