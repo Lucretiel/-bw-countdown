@@ -2,7 +2,6 @@
 	angular.module("countdownApp", []).controller('CountdownController', function ($scope, $interval) {
 		var beachWeekDate = new Date(2015, 06, 5, 16);
 		var beachWeekTime = beachWeekDate.getTime();
-		$scope.countdowns = {}
 
 		$interval(function () {
 			var nowDate = new Date();
